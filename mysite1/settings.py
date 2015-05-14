@@ -88,7 +88,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC+8'
+TIME_ZONE = 'Asia/Kuala_Lumpur'
 
 USE_I18N = True
 
