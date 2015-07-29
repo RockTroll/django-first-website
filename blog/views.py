@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
+
 from django.contrib.auth.decorators import login_required
 from .models import Post
 from .forms import PostForm
@@ -56,6 +57,4 @@ def post_edit(request, post_id):
 			return redirect('blog.views.post_detail', post_id=post.pk)
 	else:
 		form = PostForm(instance=post)
-	return render(request, 'blog/post_edit.html', {'form' : form})
-	
-	
+	return render(request, 'blog/post_edit.html', {'form' : form})	
